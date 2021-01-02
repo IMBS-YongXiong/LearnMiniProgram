@@ -1,0 +1,5 @@
+/* pages/home/homw.wxss */
+.title{
+  font-size: 16px;
+  color: green;
+}
