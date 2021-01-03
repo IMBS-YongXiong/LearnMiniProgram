@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name: "LiShen",
+    movies: [
+      {name: "我喜欢你", year: 2011, number: 100000},
+      {name: "w两个世界", year: 2018, number: 13000},
+      {name: "k two", year: 2015, number: 6000},
+      {name: "爱", year: 2013, number: 80000}
+    ],
+    number: 0
+  },
+  handleIncrement() {
+    this.setData({
+      number: this.data.number +1 
+    })
+  },
+  handleDecrement() {
+    this.setData({
+      number: this.data.number -1
+    })
   },
 
   /**

@@ -1,3 +1,10 @@
 <!--pages/home/homw.wxml-->
-<text class="title">Hello LiShen</text>
-<button size="mini">点我</button>
+<!--小程序初体验-->
+<view>我的名字： {{name}}</view>
+
+<view wx:for="{{movies}}" wx:key="index">{{index + 1}}.{{item.name}}--{{item.year}}</view>
+
+<button size="mini" bindtap="handleIncrement">+</button>
+<button size="mini" bindtap="handleDecrement">-</button>
+<view>{{number}}</view>
+
